@@ -78,33 +78,33 @@ const ingredients = [
 
 Напиши скрипт, который для каждого элемента массива ingredients:
 
-Создаст отдельный элемент &lt;li&gt;. Обзательно используй метод document.createElement().
+Создаст отдельный элемент `<li>`. Обзательно используй метод document.createElement().
 Добавит название ингредиента как его текстовое содержимое.
 Добавит элементу класс item.
-После чего вставит все &lt;li&gt; за одну операцию в список ul#ingredients.
+После чего вставит все `<li>`; за одну операцию в список ul#ingredients.
 
 <h2>Задание 3</h2>
 Напиши скрипт для создания галереи изображений по массиву данных. В HTML есть список ul.gallery.
 
-<ul class="gallery"></ul>
+`<ul class="gallery"></ul>`
 
-Используй массив объектов images для создания элементов <img> вложенных в &lt;li&gt;. Для создания разметки используй шаблонные строки и метод insertAdjacentHTML().
+Используй массив объектов images для создания элементов `<img>` вложенных в `<li>`. Для создания разметки используй шаблонные строки и метод insertAdjacentHTML().
 
 Все элементы галереи должны добавляться в DOM за одну операцию вставки.
 Добавь минимальное оформление галереи флексбоксами или гридами через CSS классы.
-const images = [
-  {
+const images = [</br>
+  {</br>
     url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260",
-    alt: "White and Black Long Fur Cat",
-  },
-  {
+    alt: "White and Black Long Fur Cat",</br>
+  },</br>
+  {</br>
     url: "https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?dpr=2&h=750&w=1260",
-    alt: "Orange and White Koi Fish Near Yellow Koi Fish",
-  },
-  {
+    alt: "Orange and White Koi Fish Near Yellow Koi Fish",</br>
+  },</br>
+  {</br>
     url: "https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?dpr=2&h=750&w=1260",
-    alt: "Group of Horses Running",
-  },
+    alt: "Group of Horses Running",</br>
+  },</br>
 ];
 
 <h2>Задание 4</h2>
