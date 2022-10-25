@@ -67,14 +67,14 @@ Elements: 5
 
 В JavaScript есть массив строк.</br>
 
-const ingredients = [
+`const ingredients = [
   "Potatoes",
   "Mushrooms",
   "Garlic",
   "Tomatos",
   "Herbs",
   "Condiments",
-];
+];`
 
 Напиши скрипт, который для каждого элемента массива ingredients:
 
@@ -92,20 +92,20 @@ const ingredients = [
 
 Все элементы галереи должны добавляться в DOM за одну операцию вставки.
 Добавь минимальное оформление галереи флексбоксами или гридами через CSS классы.</br>
-const images = [</br>
-  {
-    url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260",</br>
-    alt: "White and Black Long Fur Cat",
-  },</br>
-  {
-    url: "https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?dpr=2&h=750&w=1260",</br>
-    alt: "Orange and White Koi Fish Near Yellow Koi Fish",
-  },</br>
-  {
-    url: "https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?dpr=2&h=750&w=1260",</br>
-    alt: "Group of Horses Running",
-  },</br>
-];
+`const images = [`</br>
+  `{
+    url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260",`</br>
+    `alt: "White and Black Long Fur Cat",
+  },`</br>
+  `{
+    url: "https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?dpr=2&h=750&w=1260",`</br>
+    `alt: "Orange and White Koi Fish Near Yellow Koi Fish",
+  },`</br>
+  `{
+    url: "https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?dpr=2&h=750&w=1260",`</br>
+    `alt: "Group of Horses Running",
+  },`</br>
+`];`
 
 <h2>Задание 4</h2>
 Счетчик состоит из спана и кнопок, которые, при клике, должны увеличивать и уменьшать его значение на единицу.
