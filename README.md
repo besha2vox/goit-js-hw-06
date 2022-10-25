@@ -65,7 +65,7 @@ Elements: 5
 
 `<ul id="ingredients"></ul>`
 
-В JavaScript есть массив строк.
+В JavaScript есть массив строк.</br>
 
 const ingredients = [
   "Potatoes",
@@ -91,15 +91,15 @@ const ingredients = [
 Используй массив объектов images для создания элементов `<img>` вложенных в `<li>`. Для создания разметки используй шаблонные строки и метод insertAdjacentHTML().
 
 Все элементы галереи должны добавляться в DOM за одну операцию вставки.
-Добавь минимальное оформление галереи флексбоксами или гридами через CSS классы.
+Добавь минимальное оформление галереи флексбоксами или гридами через CSS классы.</br>
 const images = [</br>
-  {</br>
+  {
     url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260",</br>
     alt: "White and Black Long Fur Cat",
   },</br>
   {
     url: "https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?dpr=2&h=750&w=1260",</br>
-    alt: "Orange and White Koi Fish Near Yellow Koi Fish",</br>
+    alt: "Orange and White Koi Fish Near Yellow Koi Fish",
   },</br>
   {
     url: "https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?dpr=2&h=750&w=1260",</br>
@@ -110,48 +110,41 @@ const images = [</br>
 <h2>Задание 4</h2>
 Счетчик состоит из спана и кнопок, которые, при клике, должны увеличивать и уменьшать его значение на единицу.
 
-<code>
-  <div id="counter">
-  <button type="button" data-action="decrement">-1</button>
-  <span id="value">0</span>
-  <button type="button" data-action="increment">+1</button>
-</div>
-  </code>
+
+  `<div id="counter">`</br>
+  `<button type="button" data-action="decrement">-1</button>`</br>
+  `<span id="value">0</span>`</br>
+  `<button type="button" data-action="increment">+1</button>`</br>
+`</div>`
 
 Создай переменную counterValue в которой будет храниться текущее значение счетчика и инициализируй её значением 0.
 Добавь слушатели кликов на кнопки, внутри которых увеличивай или уменьшай значение счтетчика.
 Обновляй интерфейс новым значением переменной counterValue.
 
 <h2>Задание 5</h2>
-Напиши скрипт который, при наборе текста в инпуте input#name-input (событие input), подставляет его текущее значение в span#name-output. Если инпут пустой, в спане должна отображаться строка "Anonymous".
+Напиши скрипт который, при наборе текста в инпуте `input#name-input` (событие input), подставляет его текущее значение в `span#name-output`. Если инпут пустой, в спане должна отображаться строка "Anonymous".
 
-<input type="text" id="name-input" placeholder="Please enter your name" />
-<h1>Hello, <span id="name-output">Anonymous</span>!</h1>
+`<input type="text" id="name-input" placeholder="Please enter your name" />`</br>
+`<h1>Hello, <span id="name-output">Anonymous</span>!</h1>`</br>
 
 <h2>Задание 6</h2>
 Напиши скрипт, который при потере фокуса на инпуте (событие blur), проверяет его содержимое на правильное количество введённых символов.
 
-<input
-  type="text"
-  id="validation-input"
-  data-length="6"
-  placeholder="Please enter 6 symbols"
-/>
+`<input  type="text"  id="validation-input"  data-length="6"  placeholder="Please enter 6 symbols"/>`
 
 Сколько символов должно быть в инпуте, указывается в его атрибуте data-length.
 Если введено подходящее количество символов, то border инпута становится зелёным, если неправильное - красным.
 Для добавления стилей, используй CSS-классы valid и invalid, которые мы уже добавили в исходные файлы задания.
 
-#validation-input {
-  border: 3px solid #bdbdbd;
-}
+`#validation-input {`
+  `border: 3px solid #bdbdbd;}`
 
-#validation-input.valid {
+`#validation-input.valid {`
   border-color: #4caf50;
 }
 
-#validation-input.invalid {
-  border-color: #f44336;
+`#validation-input.invalid {
+  border-color: #f44336;`
 }
 
 <h2>Задание 7</h2>
