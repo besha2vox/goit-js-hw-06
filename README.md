@@ -94,16 +94,16 @@ const ingredients = [
 Добавь минимальное оформление галереи флексбоксами или гридами через CSS классы.
 const images = [</br>
   {</br>
-    url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260",
-    alt: "White and Black Long Fur Cat",</br>
+    url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260",</br>
+    alt: "White and Black Long Fur Cat",
   },</br>
-  {</br>
-    url: "https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?dpr=2&h=750&w=1260",
+  {
+    url: "https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?dpr=2&h=750&w=1260",</br>
     alt: "Orange and White Koi Fish Near Yellow Koi Fish",</br>
   },</br>
-  {</br>
-    url: "https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?dpr=2&h=750&w=1260",
-    alt: "Group of Horses Running",</br>
+  {
+    url: "https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?dpr=2&h=750&w=1260",</br>
+    alt: "Group of Horses Running",
   },</br>
 ];
 
