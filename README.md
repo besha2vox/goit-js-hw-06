@@ -136,40 +136,39 @@ const images = [</br>
 Если введено подходящее количество символов, то border инпута становится зелёным, если неправильное - красным.
 Для добавления стилей, используй CSS-классы valid и invalid, которые мы уже добавили в исходные файлы задания.
 
-`#validation-input {`
-  `border: 3px solid #bdbdbd;}`
+`#validation-input {
+  border: 3px solid #bdbdbd;}`
 
-`#validation-input.valid {`
-  border-color: #4caf50;
-}
+`#validation-input.valid {
+  border-color: #4caf50;}`
 
 `#validation-input.invalid {
-  border-color: #f44336;`
-}
+  border-color: #f44336;
+}`
 
 <h2>Задание 7</h2>
-Напиши скрипт, который реагирует на изменение значения input#font-size-control (событие input) и изменяет инлайн-стиль span#text обновляя свойство font-size. В результате при перетаскивании ползунка будет меняться размер текста.
+Напиши скрипт, который реагирует на изменение значения `input#font-size-control` (событие input) и изменяет инлайн-стиль `span#text` обновляя свойство `font-size`. В результате при перетаскивании ползунка будет меняться размер текста.
 
-<input id="font-size-control" type="range" min="16" max="96" />
+`<input id="font-size-control" type="range" min="16" max="96" />`
 <br />
-<span id="text">Abracadabra!</span>
+`<span id="text">Abracadabra!</span>`
 
 <h2>Задание 8</h2>
 Напиши скрипт управления формой логина.
 
-<form class="login-form">
-  <label>
-    Email
-    <input type="email" name="email" />
-  </label>
-  <label>
-    Password
-    <input type="password" name="password" />
-  </label>
-  <button type="submit">Login</button>
-</form>
+`<form class="login-form">`</br>
+  `<label>
+    Email`</br>
+   ` <input type="email" name="email" />`</br>
+  `</label>`</br>
+  `<label>
+    Password`</br>
+    `<input type="password" name="password" />`</br>
+  `</label>`</br>
+  `<button type="submit">Login</button>`</br>
+`</form>`</br>
 
-Обработка отправки формы form.login-form должна быть по событию submit.
+Обработка отправки формы f`orm.login-form` должна быть по событию submit.
 При отправке формы страница не должна перезагружаться.
 Если в форме есть незаполненные поля, выводи alert с предупреждением о том, что все поля должны быть заполнены.
 Если пользователь заполнил все поля и отправил форму, собери значения полей в обьект, где имя поля будет именем свойства, а значение поля - значением свойства. Для доступа к элементам формы используй свойство elements.
@@ -178,12 +177,12 @@ const images = [</br>
 <h2>Задание 9</h2>
 Напиши скрипт, который изменяет цвета фона элемента <body> через инлайн стиль при клике на button.change-color и выводит значение цвета в span.color.
 
-<div class="widget">
-  <p>Background color: <span class="color">-</span></p>
-  <button type="button" class="change-color">Change color</button>
-</div>
+`<div class="widget">`</br>
+ `<p>Background color: <span class="color">-</span></p>`</br>
+  `<button type="button" class="change-color">Change color</button>`</br>
+`</div>`</br>
 
-Для генерации случайного цвета используй функцию getRandomHexColor.
+Для генерации случайного цвета используй функцию getRandomHexColor.</br>
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
@@ -194,19 +193,18 @@ function getRandomHexColor() {
 <h2>Задание 10</h2> (выполнять не обязательно)
 Напиши скрипт создания и очистки коллекции элементов. Пользователь вводит количество элементов в input и нажимает кнопку Создать, после чего рендерится коллекция. При нажатии на кнопку Очистить, коллекция элементов очищается.
 
-<div id="controls">
-  <input type="number" min="1" max="100" step="1" />
-  <button type="button" data-create>Create</button>
-  <button type="button" data-destroy>Destroy</button>
-</div>
+`<div id="controls">`</br>
+  `<input type="number" min="1" max="100" step="1" />`</br>
+  `<button type="button" data-create>Create</button>`</br>
+  `<button type="button" data-destroy>Destroy</button>`</br>
+`</div>`</br>
+`<div id="boxes"></div>`</br>
 
-<div id="boxes"></div>
+Создай функцию createBoxes(amount), которая принимает один параметр - число. Функция создает столько `<div>`, сколько указано в amount и добавляет их в `div#boxes`.
 
-Создай функцию createBoxes(amount), которая принимает один параметр - число. Функция создает столько <div>, сколько указано в amount и добавляет их в div#boxes.
-
-Размеры самого первого <div> - 30px на 30px.
+Размеры самого первого `<div>` - 30px на 30px.
 Каждый элемент после первого, должен быть шире и выше предыдущего на 10px.
-Все элементы должены иметь случайный цвет фона в формате HEX. Используй готовую функцию getRandomHexColor для получения цвета.
+Все элементы должены иметь случайный цвет фона в формате HEX. Используй готовую функцию getRandomHexColor для получения цвета.</br></br>
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
     .toString(16)
