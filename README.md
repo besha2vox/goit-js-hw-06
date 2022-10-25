@@ -14,34 +14,34 @@
 
 
   `<ul id="categories">` </br>
-  `<li class="item">`
-    `<h2>Animals</h2>`
-    `<ul>`
-      `<li>Cat</li>`
-      `<li>Hamster</li>`
-      `<li>Horse</li>`
-      `<li>Parrot</li>`
-    `</ul>`
-  `</li>`
-  `<li class="item">`
-    `<h2>Products</h2>`
-    `<ul>`
-      `<li>Bread</li>`
-      `<li>Prasley</li>`
-      `<li>Cheese</li>`
-    `</ul>`
-  `</li>`
-  `<li class="item">`
-    `<h2>Technologies</h2>`
-    `<ul>`
-      `<li>HTML</li>`
-      `<li>CSS</li>`
-      `<li>JavaScript</li>`
-      `<li>React</li>`
-      `<li>Node.js</li>`
-    `</ul>`
-  `</li>`
-`</ul>`
+  `<li class="item">`</br>
+    `<h2>Animals</h2>`</br>
+    `<ul>`</br>
+      `<li>Cat</li>`</br>
+      `<li>Hamster</li>`</br>
+      `<li>Horse</li>`</br>
+      `<li>Parrot</li>`</br>
+    `</ul>`</br>
+  `</li>`</br>
+  `<li class="item">`</br>
+    `<h2>Products</h2>`</br>
+    `<ul>`</br>
+      `<li>Bread</li>`</br>
+      `<li>Prasley</li>`</br>
+      `<li>Cheese</li>`</br>
+    `</ul>`</br>
+  `</li>`</br>
+  `<li class="item">`</br>
+    `<h2>Technologies</h2>`</br>
+    `<ul>`</br>
+      `<li>HTML</li>`</br>
+      `<li>CSS</li>`</br>
+      `<li>JavaScript</li>`</br>
+      `<li>React</li>`</br>
+      `<li>Node.js</li>`</br>
+    `</ul>`</br>
+  `</li>`</br>
+`</ul>`</br>
 
 Напиши скрипт который:
 
