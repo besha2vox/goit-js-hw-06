@@ -13,9 +13,9 @@
 В HTML есть список категорий ul#categories.
 
 `<ul id="categories">`
-  <li class="item">
-    <h2>Animals</h2>
-    <ul>
+  `<li class="item">`
+    `<h2>Animals</h2>`
+    `<ul>`
       <li>Cat</li>
       <li>Hamster</li>
       <li>Horse</li>
