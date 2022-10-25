@@ -12,8 +12,8 @@
 <h2>Задание 1</h2>
 В HTML есть список категорий ul#categories.
 
-<code>
-  `<ul id="categories">`
+
+  `<ul id="categories">` </br>
   `<li class="item">`
     `<h2>Animals</h2>`
     `<ul>`
@@ -42,7 +42,6 @@
     `</ul>`
   `</li>`
 `</ul>`
-  </code>
 
 Напиши скрипт который:
 
