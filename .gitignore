@@ -106,5 +106,5 @@ dist
 # VS Code Settings
 .vscode
 
-# Git Ignore
-.gitignore
+# Prettier
+.prettierrc.json
