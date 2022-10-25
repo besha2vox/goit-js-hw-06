@@ -12,7 +12,7 @@
 <h2>Задание 1</h2>
 В HTML есть список категорий ul#categories.
 
-`<ul id="categories">
+`<ul id="categories">`
   <li class="item">
     <h2>Animals</h2>
     <ul>
