@@ -20,12 +20,14 @@ const makeDiv = () => {
     divBox.style.height = divBox.style.width;
     divBox.style.backgroundColor = getRandomHexColor();
     elements.push(divBox);
+    console.log(`size: ${size}x${size}px\nbgc: ${divBox.style.backgroundColor}`);
   }
   boxesRef.append(...elements);
 };
 
 const delDiv = () => {
   boxesRef.innerHTML = '';
+  console.clear();
 };
 
 createBtnRef.addEventListener('click', makeDiv);
