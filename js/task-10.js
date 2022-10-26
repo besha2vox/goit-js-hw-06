@@ -8,6 +8,7 @@ const destroyBtnRef = document.querySelector('[data-destroy]');
 const boxesRef = document.querySelector('#boxes');
 
 let size = 0;
+let count = 0;
 const elements = [];
 
 const makeDiv = () => {
@@ -24,7 +25,7 @@ const makeDiv = () => {
 
     elements.push(divBox);
 
-    console.group(`divBox ${i + i}`);
+    console.group(`divBox ${++count}`);
     console.log(`size: ${size}x${size}px\nbgc: ${divBox.style.backgroundColor}`);
     console.groupEnd();
   }
@@ -34,6 +35,8 @@ const makeDiv = () => {
 
 const delDiv = () => {
   boxesRef.innerHTML = '';
+  size = 0;
+  count = 0;
   console.clear();
 };
 
