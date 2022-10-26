@@ -1,9 +1,8 @@
 const validationInputRef = document.querySelector('#validation-input');
-
-const inputValidation = () => {
+const handleInputValidationBlur = () => {
   validationInputRef.value.length === Number(validationInputRef.dataset.length)
     ? validationInputRef.classList.add('valid')
     : validationInputRef.classList.add('invalid');
 };
 
-validationInputRef.addEventListener('blur', inputValidation);
+validationInputRef.addEventListener('blur', handleInputValidationBlur);

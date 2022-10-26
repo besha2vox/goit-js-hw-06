@@ -5,9 +5,9 @@ function getRandomHexColor() {
 const btnRef = document.querySelector('.change-color');
 const textRef = document.querySelector('.color');
 
-const changeColor = () => {
+const handleChangeColorClick = () => {
   textRef.textContent = getRandomHexColor();
   document.body.style.backgroundColor = getRandomHexColor();
 };
 
-btnRef.addEventListener('click', changeColor);
+btnRef.addEventListener('click', handleChangeColorClick);

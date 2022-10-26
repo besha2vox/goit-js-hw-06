@@ -11,7 +11,7 @@ let size = 0;
 let count = 0;
 const elements = [];
 
-const makeDiv = () => {
+const makeElementsClick = () => {
   const amountOfElements = Number(inputRef.value);
 
   for (let i = 0; i < amountOfElements; i += 1) {
@@ -33,12 +33,12 @@ const makeDiv = () => {
   boxesRef.append(...elements);
 };
 
-const delDiv = () => {
+const removeElementsClick = () => {
   boxesRef.innerHTML = '';
   size = 0;
   count = 0;
   console.clear();
 };
 
-createBtnRef.addEventListener('click', makeDiv);
-destroyBtnRef.addEventListener('click', delDiv);
+createBtnRef.addEventListener('click', makeElementsClick);
+destroyBtnRef.addEventListener('click', removeElementsClick);
