@@ -3,12 +3,16 @@ function getRandomHexColor() {
 }
 
 const btnRef = document.querySelector('.change-color');
-const textRef = document.querySelector('.color');
+const spanRef = document.querySelector('.color');
+const paragrafRef = document.querySelector('.widget p');
 
 const handleChangeColorClick = () => {
   const color = getRandomHexColor();
-  textRef.textContent = color;
+  spanRef.textContent = color;
   document.body.style.backgroundColor = color;
+  // add color inversion for text
+  paragrafRef.style.color = color;
+  paragrafRef.style.filter = 'invert(1)';
 };
 
 btnRef.addEventListener('click', handleChangeColorClick);
