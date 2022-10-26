@@ -15,13 +15,20 @@ const makeDiv = () => {
 
   for (let i = 0; i < amountOfElements; i += 1) {
     const divBox = document.createElement('div');
+
     size += size > 0 ? 10 : 30;
+
     divBox.style.width = `${size}px`;
     divBox.style.height = divBox.style.width;
     divBox.style.backgroundColor = getRandomHexColor();
+
     elements.push(divBox);
+
+    console.group(`divBox ${i + i}`);
     console.log(`size: ${size}x${size}px\nbgc: ${divBox.style.backgroundColor}`);
+    console.groupEnd();
   }
+
   boxesRef.append(...elements);
 };
 
