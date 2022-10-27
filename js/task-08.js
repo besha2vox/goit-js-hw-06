@@ -9,10 +9,11 @@ const handleloginFormSubmit = event => {
   if (email.value === '' || password.value === '') {
     return alert('Усі поля мають бути заповнені');
   }
-  const logginData = {
-    [email.name]: email.value,
-    [password.name]: password.value,
-  };
+
+  const logginData = {};
+  for (const key of new FormData(event.currentTarget).keys()) {
+    logginData[key] = key;
+  }
   console.log(logginData);
   event.currentTarget.reset();
 };
