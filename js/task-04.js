@@ -1,17 +1,26 @@
 let counterValue = 0;
 
-const counterRef = document.querySelector('#counter');
-const valueRef = counterRef.querySelector('#value');
+const refs = {
+  counter: document.querySelector('#counter'),
+  value: counter.querySelector('#value'),
+};
 
-counterRef.addEventListener('click', onCounterClick);
+refs.counter.addEventListener('click', onCounterClick);
 
 function onCounterClick(e) {
   if (e.target.dataset.action === 'decrement') {
-    counterValue -= 1;
+    onDecrementClick();
   }
   if (e.target.dataset.action === 'increment') {
-    counterValue += 1;
+    onIncrementClick();
   }
+  refs.value.textContent = counterValue;
+}
 
-  valueRef.textContent = counterValue;
+function onIncrementClick() {
+  counterValue += 1;
+}
+
+function onDecrementClick() {
+  counterValue -= 1;
 }
