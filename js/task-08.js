@@ -1,21 +1,31 @@
 const loginFormRef = document.querySelector('.login-form');
 
-const handleloginFormSubmit = event => {
-  event.preventDefault();
+function onLoginFormSubmit(e) {
+  e.preventDefault();
+  isFormEmpty(e.currentTarget);
+  loggDataForm(e.currentTarget);
+  e.currentTarget.reset();
+}
+
+function isFormEmpty(props) {
   const {
     elements: { email, password },
-  } = event.currentTarget;
+  } = props;
 
   if (email.value === '' || password.value === '') {
     return alert('Усі поля мають бути заповнені');
   }
+}
 
+function loggDataForm(props) {
   const logginData = {};
-  for (const key of new FormData(event.currentTarget).keys()) {
-    logginData[key] = key;
-  }
-  console.log(logginData);
-  event.currentTarget.reset();
-};
+  const formData = new FormData(props);
 
-loginFormRef.addEventListener('submit', handleloginFormSubmit);
+  formData.forEach((value, key) => {
+    logginData[key] = value;
+  });
+
+  console.log(logginData);
+}
+
+loginFormRef.addEventListener('submit', onLoginFormSubmit);
