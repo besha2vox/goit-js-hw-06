@@ -14,7 +14,7 @@ function onCounterClick(e) {
   if (e.target.dataset.action === 'increment') {
     onIncrementClick();
   }
-  refs.value.textContent = counterValue;
+  render();
 }
 
 function onIncrementClick() {
@@ -24,3 +24,9 @@ function onIncrementClick() {
 function onDecrementClick() {
   counterValue -= 1;
 }
+
+function render() {
+  refs.value.textContent = counterValue;
+}
+
+render();
